@@ -11,7 +11,7 @@ INPUT_TEXT=0
 
 def start(update, context):
     user = update.message.from_user #usuario
-    update.message.reply_text("Bienvendio "+user['first_name']+" "+ user['last_name']+", Consultemos el clima con los comandos.")
+    update.message.reply_text("Bienvendio "+user['username']+", Consultemos el clima con los comandos.")
 
 def climatico(update,context):
     update.message.reply_text("Nombre de la ciudad")
